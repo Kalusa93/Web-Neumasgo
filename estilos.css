@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.body{
+    color: black;
+}
+a{
+    text-decoration: none !important;
+}
+nav{
+    background-color: #003084;
+    height: 95px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 100px;
+}
+.logo{
+    height: 60px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 10px 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-family: Barlow, sans-serif;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #F9C440;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/*Dropdown*/
+nav ul li ul.dropdown li{
+    display: block;
+    line-height: 30px;
+}
+nav ul li ul.dropdown{
+    width: 100%;
+    background: #003084;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+nav ul li a:hover{
+    background: #003084;
+}
+nav ul li:hover ul.dropdown{
+    display: block;
+}
+/*Slider*/
+.carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel-inner img{
+    max-width: 1000px;
+    max-height: 400px;
+    margin: 0 auto;
+}
+.carrousel-control-next, .carrousel-control-prev {
+    color: black !important;
+}
+
+/*barra responsive*/
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #F9C440;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: white;
+    }
+    #check:checked ~ul{
+        left: 0;
+    }
+}
+/*Footer*/
+.pie-pagina{
+    width: 100%;
+    background-color: #003084 !important;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 200px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: Barlow, sans-serif;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    font-family: Barlow, sans-serif;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #06225B;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color:#F9C440;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    font-family: Barlow, sans-serif;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns:repeat(1, 1fr);
+        padding: 35px 0px;
+    }
+}
