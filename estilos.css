@@ -13,7 +13,7 @@ a{
 }
 nav{
     background-color: #003084;
-    height: 95px;
+    height: 100px;
     width: 100%;
 }
 .enlace{
@@ -21,27 +21,28 @@ nav{
     padding: 20px 100px;
 }
 .logo{
+    margin-left: 60px;
     height: 60px;
 }
 nav ul{
     float: right;
-    margin-right: 20px;
+    margin-right: 160px;
+    margin-top: 30px;
 }
 nav ul li{
+    font-weight: 500;
     display: inline-block;
-    line-height: 80px;
-    margin: 10px 5px;
+    line-height: 40px;
 }
-nav ul li a{
+nav ul li a, h3, a{
     color: #fff;
     font-family: Barlow, sans-serif;
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
 }
 li a.active, li a:hover{
-    background: #F9C440;
+    color: none;
     transition: .5s;
 }
 .checkbtn{
@@ -58,39 +59,61 @@ li a.active, li a:hover{
 }
 
 /*Dropdown*/
-nav ul li ul.dropdown li{
-    display: block;
-    line-height: 30px;
-}
 nav ul li ul.dropdown{
-    width: 100%;
+    top: 5%;
+    width: 150px;
     background: #003084;
     position: absolute;
     z-index: 999;
     display: none;
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 0;
+}
+nav ul li ul.dropdown li{
+    font-weight: 500;
+    display: block;
+    line-height: 38px;
+    border: 1px solid #ccc;
 }
 nav ul li a:hover{
-    background: #003084;
+    background: #06225B;
+    color: #F9C440;
 }
 nav ul li:hover ul.dropdown{
     display: block;
+    list-style: none;
 }
 /*Slider*/
 .carousel-inner{
+    background-color: #F9C440;
     position: relative;
     width: 100%;
     overflow: hidden;
+    height: 300px;
 }
 .carousel-inner img{
-    max-width: 1000px;
-    max-height: 400px;
+    max-width: 80%;
+    max-height: 100%;
     margin: 0 auto;
 }
 .carrousel-control-next, .carrousel-control-prev {
     color: black !important;
 }
 
+/* Cubiertas */
+.img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /*barra responsive*/
+@media (max-width: 1400px) {
+    .enlace{
+        margin-left: 20px;
+    }
+}
 @media (max-width: 952px){
     .enlace{
         padding-left: 20px;
@@ -168,7 +191,7 @@ nav ul li:hover ul.dropdown{
     text-decoration: none;
     width: 45px;
     height: 45px;
-    line-height: 45px;
+    line-height: 33px;
     color: #fff;
     margin-right: 10px;
     background-color: #06225B;
@@ -176,6 +199,7 @@ nav ul li:hover ul.dropdown{
     transition: all 300ms ease;
 }
 .pie-pagina .grupo-1 .red-social a:hover{
+    background: #06225B;
     color:#F9C440;
 }
 .pie-pagina .grupo-2{
