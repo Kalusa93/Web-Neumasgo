@@ -202,6 +202,18 @@ nav ul li:hover ul.dropdown{
     background: #06225B;
     color:#F9C440;
 }
+.mapa-y-redes {
+    display: flex; /* Usa flexbox para alinear elementos horizontalmente */
+    flex-direction: row;
+    align-items: center; /* Centra horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+}
+.mapa-y-redes iframe, .mapa-y-redes h1{
+    margin-left: 100px;
+}
+.red-social-contacto{
+    margin-left: 150px;
+}
 .pie-pagina .grupo-2{
     background-color: #0a1a2a;
     padding: 15px 10px;
