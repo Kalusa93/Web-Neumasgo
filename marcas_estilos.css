@@ -23,3 +23,25 @@ img, svg {
     height: auto;
     text-align: center;
 }
+.local{
+    max-width: 1000px;
+    align-content: center;
+}
+.local-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.title {
+    margin: 20px 0; /* Espacio entre el título y la imagen */
+}
+.introduction{
+    display: flex;
+    text-align: center;
+    max-width: 500px;
+    margin: 20px auto;
+}
+.acerca{
+    background-color: aqua;
+}
