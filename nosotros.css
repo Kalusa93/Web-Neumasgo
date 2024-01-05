@@ -1,31 +1,7 @@
-.marcas-inicio {
-    padding: 25px 0;
-    background-color: #f2f2f2;
-}
-img, svg {
-    vertical-align: middle;
-    overflow: clip;
-}
-.img-responsive{
-    max-height: 350px;
-    width: auto;
-}
-.marcas-inicio ul {
-    display: block;
-    width: 100%;
-    margin: 20px auto;
-    text-align: center;
-}
-.marcas-inicio ul li {
-    display: inline-block;
-    margin: 0 auto;
-    width: 300px;
-    height: auto;
-    text-align: center;
-}
 .local{
     max-width: 1000px;
     align-content: center;
+    width: 100%;
 }
 .local-container {
     display: flex;
