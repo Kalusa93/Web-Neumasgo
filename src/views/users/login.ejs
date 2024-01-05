@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Changa&family=Mohave:wght@300&family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Document</title>
+</head> -->
+<%- include('../partials/head.ejs') %>
+
+<body>
+
+    <section class="left-section">
+
+        <h2 class="txt1"><a href="/">VENNER</a></h2>
+
+        <h3 class="txt2">Wine Store</h3>
+
+        <i class="fa-regular fa-circle-user icon-user"></i>
+
+        <p class="iniciar-sesion">INICIA SESIÓN</p>
+
+        <form action="" class="form">
+
+            <div class="campo-container">
+                <label for="email">CORREO</label>
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="ejemplo@email.com" name="email" id="email">
+                </div>
+            </div>
+
+            <div class="campo-container">
+                <label for="password">CONSTRASEÑA</label>
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" id="password">
+                    <i class="fa-regular fa-eye-slash icon-eye"></i>
+                </div>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+        </form>
+
+        <button type="submit" class="btn">INICIAR SESIÓN</button>
+
+        <p class="tienes-cuenta">¿No tienes una cuenta? <a href="/users/register">Registrate</a></p>
+
+        <div class="redes">
+            <h2>SIGUENOS</h2>
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="right-section">
+        <p>Bienvenidos</p>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+    </section>
+</body>
+
+</html>

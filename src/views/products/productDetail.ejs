@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venner Wine Store y amigos</title>
+  <link rel="icon" href="../wireframe/desktop/logo_venner.ico" type="image/icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mohave&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="/css/productDetail.css">
+</head> -->
+<%- include('../partials/head.ejs') %>
+<body>
+  <%- include('../partials/header.ejs') %>
+
+    <main>
+      <section class="show-img-product">
+        <div>
+          <div class="img-product">
+            <img src="/images/products/<%= product.image %>" alt="" />
+          </div>
+          <div>
+
+          </div>
+      </section>
+      <section class="description-product">
+        <div>
+          <h3><%= product.name + ' ' + product.tall%>CC.</h3>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="details">
+          <p>
+            <strong>Tipo de Vino:</strong><%= product.varieties %>
+          </p>
+          <p>
+            <strong>Origen:</strong><%= product.origin %>
+          </p>
+          <p>
+            <strong>Descripcion:</strong><%= product.description %>
+          </p>
+        </div>
+
+        <button type="submit" id="buy-now">Comprar ahora!</button>
+        <button type="" id="add-cart">Agregar al carro!</button>
+        <a href="/products/edit/<%= product.id %>">Editar</a>
+        <form action="/products/delete/<%= product.id %>?_method=delete" method="post">
+          <button type="submit">Eliminar</button> 
+        </form>
+      </section>
+      <!-- <section class="product-interest">
+
+      </section> -->
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+
+</body>
+
+</html>

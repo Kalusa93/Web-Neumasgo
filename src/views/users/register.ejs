@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venner Wine Store y amigos</title>
+  <link rel="icon" href="../wireframe/desktop/logo_venner.ico" type="image/icon" />
+  <link rel="stylesheet" type="text/css" href="/css/register.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mohave&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head> -->
+
+<%- include('../partials/head.ejs') %>
+
+<body>
+  <%- include('../partials/header.ejs') %>
+
+    <main id="main-register">
+      <section>
+        <form action="/register" method="post" id="formulario">
+          <legend>REGISTRATE</legend>
+
+          <div class="div-form">
+            <label for="name">NOMBRE</label>
+            <input type="text" name="name" id="name" placeholder="Nombre" />
+          </div>
+
+          <div class="div-form">
+            <label for="surname">APELLIDO</label>
+            <input type="text" name="surname" id="surname" placeholder="Apellido" />
+          </div>
+
+          <div class="div-form">
+            <label for="email">CORREO</label>
+            <input type="email" name="email" id="email" placeholder="correo@.." />
+          </div>
+
+          <div class="div-form">
+            <label for="tel">TELÉFONO</label>
+            <input type="tel" ame="tel" id="tel" placeholder="+549..." />
+          </div>
+
+          <div class="div-form">
+            <label for="pass">CONSTRASEÑA</label>
+            <input type="password" name="pass" id="pass" />
+            <img src="" alt="" />
+          </div>
+
+          <div class="div-form">
+            <label for="reppass">CONFIRMAR CONTRASEÑA</label>
+            <input type="password" name="reppass" id="reppass" />
+            <img src="" alt="" />
+          </div>
+
+          <button type="submit" id="button-form">CREAR CUENTA</button>
+        </form>
+      </section>
+
+      <p id="p-register">
+        ¿Ya tenes cuenta? <a href="/users/login"><strong>Inicia Sesión</strong></a>
+      </p>
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>
