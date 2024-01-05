@@ -6,7 +6,7 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
 const controller = {
     home: (req, res) => {
-        res.render('home', {title: 'VENNER Vinoteca', css: 'home.css'});
+        res.render('home', {title: 'Neumáticos Santiago', css: 'home.css'});
     },
 
     about: (req, res) => {
@@ -15,6 +15,10 @@ const controller = {
 
     contact: (req, res) => {
         res.render('contacto', {title: 'Contacto', css: 'contacto.css'});
+    },
+
+    services: (req, res) => {
+        res.render('servicios', {title: 'Servicios', css: 'servicios.css'});
     },
 
     search: (req, res) => {
