@@ -1,5 +1,4 @@
 body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,10 +11,6 @@ h1 {
 
 h2 {
     color: #333;
-}
-
-p {
-    color: #666;
 }
 
 .nav-link {
@@ -45,6 +40,7 @@ p {
 
 #v-pills-tab {
     width: 25%;
+    font-family: Barlow, sans-serif;
 }
 
 #v-pills-tabContent {
@@ -58,6 +54,19 @@ p {
 .alinear {
     padding-bottom: 20px;
     padding-top: 20px;
+}
+
+.fa-solid.fa-check, .fa-solid.fa-exclamation {
+    padding-right: 10px;
+}
+
+.img-service, .img-audi, .img-vento {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.img-audi, .img-vento {
+    max-width: 49%;
 }
 
 @media (min-width: 992px) {
