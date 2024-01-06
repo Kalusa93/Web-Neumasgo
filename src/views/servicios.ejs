@@ -24,34 +24,79 @@
 <body>
     <%- include('./partials/header.ejs') %>
 
-    <h1>Servicios</h1>
+    <div class="container">
+        <div>
+            <h1>Servicios</h1>
+            <hr>
+        </div>
 
-    <div class="d-flex align-items-start">
-        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <button class="nav-link active" id="v-pills-alineado-tab" data-bs-toggle="pill" data-bs-target="#v-pills-alineado" type="button" role="tab" 
-          aria-controls="v-pills-alineado" aria-selected="true">Alineado y Balanceo</button>
-          <button class="nav-link" id="v-pills-service-tab" data-bs-toggle="pill" data-bs-target="#v-pills-service" type="button" role="tab" 
-          aria-controls="v-pills-service" aria-selected="false">Service de Motor</button>
-          <button class="nav-link" id="v-pills-suspension-tab" data-bs-toggle="pill" data-bs-target="#v-pills-suspension" type="button" role="tab" 
-          aria-controls="v-pills-suspension" aria-selected="false">Suspensión</button>
-          <button class="nav-link" id="v-pills-frenos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-frenos" type="button" role="tab" 
-          aria-controls="v-pills-frenos" aria-selected="false">Frenos</button>
-          <button class="nav-link" id="v-pills-escaneo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-escaneo" type="button" role="tab" 
-          aria-controls="v-pills-escaneo" aria-selected="false">Escaneo Automotriz</button>
+        <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                
+              <button class="nav-link active" id="v-pills-alineado-tab" data-bs-toggle="pill" data-bs-target="#v-pills-alineado" type="button" role="tab" 
+              aria-controls="v-pills-alineado" aria-selected="true">Alineado y Balanceo</button>
+
+              <button class="nav-link" id="v-pills-service-tab" data-bs-toggle="pill" data-bs-target="#v-pills-service" type="button" role="tab" 
+              aria-controls="v-pills-service" aria-selected="false">Service de Motor</button>
+
+              <button class="nav-link" id="v-pills-suspension-tab" data-bs-toggle="pill" data-bs-target="#v-pills-suspension" type="button" role="tab" 
+              aria-controls="v-pills-suspension" aria-selected="false">Suspensión</button>
+
+              <button class="nav-link" id="v-pills-frenos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-frenos" type="button" role="tab" 
+              aria-controls="v-pills-frenos" aria-selected="false">Frenos</button>
+
+              <button class="nav-link" id="v-pills-escaneo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-escaneo" type="button" role="tab" 
+              aria-controls="v-pills-escaneo" aria-selected="false">Escaneo Automotriz</button>
+            </div>
+
+            <div class="tab-content" id="v-pills-tabContent">
+            
+              <div class="tab-pane fade show active" id="v-pills-alineado" role="tabpanel" aria-labelledby="v-pills-alineado-tab" tabindex="0">
+                <h2>Alineado</h2>
+                <img src="../img/alinear_bridgestone.png" class="alinear" alt="Alineado">
+                <p>
+                    Garantizamos que las ruedas de tu vehículo estén correctamente alineadas y balanceadas para un manejo suave y seguro. 
+                    Se recomienda realizar la alineación de neumáticos dos veces al año. Aunque esto, no es una ciencia cierta, ya que cada vehículo es diferente.
+                    Por lo que te sugerimos consultar en el manual del fabricante, el tiempo estimado para hacerlo.
+                </p>
+                <p>
+                    De igual manera, se recomiendan alinear ambos ejes del auto, es decir la parte delantera y la trasera. ¿Por qué los dos y no solo uno? 
+                Si uno de los neumáticos está un poco abierto, cerrado o con una diferente inclinación, además de que crea un mayor desgaste sobre los 
+                otros neumáticos, ocasiona que el vehículo se comporte errático, es decir, que no sea tan preciso en sus movimientos, trayendo 
+                como consecuencia accidentes automovilísticos.
+                </p> 
+                <p>
+                    Por seguridad o durabilidad de los neumáticos es importante hacer estas alineaciones. ¡No te olvides! De esta manera, tu vehículo 
+                será más seguro y el desgaste más parejo en tus cubiertas.
+                </p>
+                <h2>Balanceo</h2>
+                <p>
+                    Ahora bien, en cuanto al balanceo, es muy fácil sentir cuando el auto está mal balanceado. Al llegar a ciertas velocidades sentirás en el volante 
+                la vibración del vehículo, esto significa que la cubierta tiene un “abultamiento” o que los neumáticos están desbalanceados. Lo recomendable 
+                es verificar cuál de las dos causas es. Si es un abultamiento, cambia el neumático. Es importante saber que las cubiertas se cambian por par, 
+                si la cubierta trasera izquierda tiene este problema, tendrás que cambiar de igual manera la derecha. Si está desbalanceado, balancearlo. 
+                Así se evitará un desgaste irregular del neumático, además de no sentir esa molestia de las vibraciones en el volante. Otro beneficio del balanceo, 
+                es que se economiza un poco la gasolina porque la cubierta tiene un buen agarre en el piso y no va bailando.
+                </p>
+                <p>
+                    Por todo esto, es importante que no te olvides de realizar a tu vehículo la alineación y balanceo.
+                </p>
+                </div>
+              <div class="tab-pane fade" id="v-pills-service" role="tabpanel" aria-labelledby="v-pills-service-tab" tabindex="0">Nuestros expertos 
+                realizan servicios completos para mantener el motor de tu automóvil en óptimas condiciones, garantizando su rendimiento y durabilidad.</div>
+              <div class="tab-pane fade" id="v-pills-suspension" role="tabpanel" aria-labelledby="v-pills-suspension-tab" tabindex="0">Ofrecemos servicios de 
+                diagnóstico y reparación de sistemas de suspensión para garantizar una conducción cómoda y segura.</div>
+              <div class="tab-pane fade" id="v-pills-frenos" role="tabpanel" aria-labelledby="v-pills-frenos-tab" tabindex="0">Nuestros técnicos expertos 
+                se encargan del mantenimiento y reparación de sistemas de frenos para asegurar una respuesta eficiente y segura al frenar.</div>
+              <div class="tab-pane fade" id="v-pills-escaneo" role="tabpanel" aria-labelledby="v-pills-escaneo-tab" tabindex="0">Realizamos escaneo automotriz 
+                avanzado para detectar y solucionar problemas electrónicos en el vehículo, garantizando un rendimiento óptimo.</div>
+            </div>
         </div>
-        <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="v-pills-alineado" role="tabpanel" aria-labelledby="v-pills-alineado-tab" tabindex="0">Garantizamos 
-            que las ruedas de tu vehículo estén correctamente alineadas y balanceadas para un manejo suave y seguro.</div>
-          <div class="tab-pane fade" id="v-pills-service" role="tabpanel" aria-labelledby="v-pills-service-tab" tabindex="0">Nuestros expertos 
-            realizan servicios completos para mantener el motor de tu automóvil en óptimas condiciones, garantizando su rendimiento y durabilidad.</div>
-          <div class="tab-pane fade" id="v-pills-suspension" role="tabpanel" aria-labelledby="v-pills-suspension-tab" tabindex="0">Ofrecemos servicios de 
-            diagnóstico y reparación de sistemas de suspensión para garantizar una conducción cómoda y segura.</div>
-          <div class="tab-pane fade" id="v-pills-frenos" role="tabpanel" aria-labelledby="v-pills-frenos-tab" tabindex="0">Nuestros técnicos expertos 
-            se encargan del mantenimiento y reparación de sistemas de frenos para asegurar una respuesta eficiente y segura al frenar.</div>
-          <div class="tab-pane fade" id="v-pills-escaneo" role="tabpanel" aria-labelledby="v-pills-escaneo-tab" tabindex="0">Realizamos escaneo automotriz 
-            avanzado para detectar y solucionar problemas electrónicos en el vehículo, garantizando un rendimiento óptimo.</div>
-        </div>
-      </div>
+    </div>
+
+    
+    
+    
     
     <%- include('./partials/footer.ejs') %>
     

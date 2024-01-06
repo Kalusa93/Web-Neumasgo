@@ -5,12 +5,9 @@ body {
     box-sizing: border-box;
 }
 
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+h1 {
+    text-align: center;
+    padding-top: 20px;
 }
 
 h2 {
@@ -28,4 +25,49 @@ p {
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #F9C440 !important;
     background-color: #003084 !important;
+}
+
+.nav-link, .nav-link.active {
+    text-align: left;
+}
+
+.d-flex.align-items-start {
+    align-content: space-between;
+}
+
+.nav.flex-column.nav-pills.me-3 {
+    width: 25%;
+}
+
+.tab content {
+    width: 75%;
+}
+
+#v-pills-tab {
+    width: 25%;
+}
+
+#v-pills-tabContent {
+    width: 75%;
+}
+
+.container {
+    padding-bottom: 30px;
+}
+
+.alinear {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+@media (min-width: 992px) {
+    .nav.flex-column.nav-pills.me-3 {
+        width: 25%;
+    }
+}
+
+@media (min-width: 992px) {
+    .tab.content {
+        width: 75%;
+    }
 }
