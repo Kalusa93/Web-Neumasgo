@@ -1,23 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <link rel="stylesheet" href="/css/servicios.css">
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-93796423-2', 'auto');
-    ga('send', 'pageview');
-
-</script>
 
 <%- include('./partials/head.ejs') %>
 
@@ -37,7 +20,7 @@
               aria-controls="v-pills-alineado" aria-selected="true">Alineado y Balanceo</button>
 
               <button class="nav-link" id="v-pills-service-tab" data-bs-toggle="pill" data-bs-target="#v-pills-service" type="button" role="tab" 
-              aria-controls="v-pills-service" aria-selected="false">Service de Motor</button>
+              aria-controls="v-pills-service" aria-selected="false">Service completo</button>
 
               <button class="nav-link" id="v-pills-suspension-tab" data-bs-toggle="pill" data-bs-target="#v-pills-suspension" type="button" role="tab" 
               aria-controls="v-pills-suspension" aria-selected="false">Suspensión</button>
@@ -82,10 +65,76 @@
                     Por todo esto, es importante que no te olvides de realizar a tu vehículo la alineación y balanceo.
                 </p>
                 </div>
-              <div class="tab-pane fade" id="v-pills-service" role="tabpanel" aria-labelledby="v-pills-service-tab" tabindex="0">Nuestros expertos 
-                realizan servicios completos para mantener el motor de tu automóvil en óptimas condiciones, garantizando su rendimiento y durabilidad.</div>
-              <div class="tab-pane fade" id="v-pills-suspension" role="tabpanel" aria-labelledby="v-pills-suspension-tab" tabindex="0">Ofrecemos servicios de 
-                diagnóstico y reparación de sistemas de suspensión para garantizar una conducción cómoda y segura.</div>
+
+              <div class="tab-pane fade" id="v-pills-service" role="tabpanel" aria-labelledby="v-pills-service-tab" tabindex="0">
+                <h2>Service completo</h2>
+                <img src="../img/service.jpg" class="img-service" alt="service">
+                <p>
+                    Nuestros expertos realizan servicios completos para mantener el motor de tu automóvil en óptimas condiciones, garantizando su rendimiento y durabilidad.
+                </p>
+                <p>                
+                    La ventaja principal de hacer el service en nuestro taller es que contamos con:
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Parámetros ya establecidos por las marcas para mantener los estándares de calidad y control del estado de toda 
+                            la unidad.</li>
+                        <li><i class="fa-solid fa-check"></i>Contamos con mecánicos entrenados en forma constante, por lo que siempre están actualizados en cuanto a modelos, 
+                            maquinaria y tecnología, sobre todo si deben trabajar con los más modernos.</li>
+                        <li><i class="fa-solid fa-check"></i>Contamos con repuestos y fluídos originales y conocimiento de todas las piezas, su configuración ideal, 
+                            duración promedio y uso recomendado.</li>
+                    </ul>
+                </p>
+
+                <p>
+                    <h3>¿Qué incluye un service?</h3>
+                    Por lo general, los service incluyen el chequeo de correas/cadena de distribución, filtro de aire, estado de neumáticos y presión, 
+                    fluidos hidráulicos y de frenos, cambio de aceite del motor y cambio de filtro de aceite, por lo que:
+                </p>
+                <p>
+                    <ul>
+                        <li><i class="fa-solid fa-exclamation"></i>Se debe revisar la presión de inflado de las llantas y el desgaste de la banda de rodamiento 
+                            de cada una de ellas.</li>
+                        <li><i class="fa-solid fa-exclamation"></i>También se deben rotar las ruedas del vehículo para evitar accidentes de tránsito y el 
+                            desgaste prematuro de las llantas.</li>
+                        <li><i class="fa-solid fa-exclamation"></i>Cada 10.000 kilómetros, es obligatorio realizar alineación y balanceo a las llantas.</li>
+                        <li><i class="fa-solid fa-exclamation"></i>Se recomienda cambiar el aceite y filtros cada 10.000 kms con aceites sintéticos, y cada 5.000 kms 
+                            cuando el aceite es mineral. Los aceites minerales son propensos a perder rápidamente sus propiedades, comprometiendo el desempeño y 
+                            la integridad de tu motor. Mientras que la tecnología molecular y el mayor grado de refinación de los lubricantes sintéticos ayuda a reducir 
+                            el número de cambios, por ende las propiedades del aceite se mantienen óptimas por más tiempo.</li>
+                        <li><i class="fa-solid fa-exclamation"></i>A los 30.000 kilómetros es fundamental realizar la primera inspección a las pastillas 
+                            de frenos del vehículo.</li>
+                    </ul>
+              </p>
+              <p>
+                En general, se recomienda revisar el vehículo desde afuera hacia adentro, comenzando por el estado de las cubiertas. Después, se debe seguir con el 
+                tren delantero, frenos, líquido refrigerante y así sucesivamente.
+              </p>
+              </div>
+              <div class="tab-pane fade" id="v-pills-suspension" role="tabpanel" aria-labelledby="v-pills-suspension-tab" tabindex="0">
+                <h2>Suspensión</h2>
+                <img src="../img/taller_audi.jpeg" class="img-audi" alt="audi">
+                <img src="../img/taller_vento.jpeg" class="img-vento" alt="vento">
+                <p>
+                    En Neumáticos Santiago ofrecemos servicios de diagnóstico y reparación de sistemas de suspensión para garantizar una conducción cómoda y segura.
+                </p>
+                <p>El mantenimiento de la suspensión de un automóvil es crucial para garantizar un manejo seguro y cómodo. La suspensión juega un papel fundamental 
+                al absorber impactos, mantener el contacto de las ruedas con la carretera y proporcionar estabilidad durante la conducción.
+                </p>  
+                <p>Cuando se presentan problemas en la suspensión, como ruidos extraños, vibraciones inusuales o un desgaste irregular de los neumáticos, 
+                es imperativo abordarlos de inmediato. La reparación de la suspensión implica diagnosticar y corregir cualquier fallo en componentes como amortiguadores, 
+                resortes, parrillas, bieletas, precas, bujes, entre otros.
+                </p>
+                <p>
+                En Neumáticos Santiago realizamos una inspección exhaustiva para identificar los elementos defectuosos y determinar si es necesario reemplazarlos o repararlos.
+                La calidad de los repuestos y la mano de obra experta son fundamentales en el proceso de reparación de la suspensión. Utilizar piezas originales 
+                o de alta calidad garantiza durabilidad y rendimiento óptimo.
+                </p>
+                
+                <p>  
+                Asimismo, contar con técnicos especializados en suspensión automotriz asegura que el trabajo se realice de manera eficiente y conforme a los estándares de seguridad.
+                En resumen, la reparación de la suspensión de un automóvil es esencial para mantener un manejo seguro, confortable y eficiente. Ante cualquier indicio 
+                de problemas en la suspensión, es recomendable acudir a nuestro taller especializado para una evaluación profesional y la realización de las reparaciones necesarias.
+                </p>
+              </div>
               <div class="tab-pane fade" id="v-pills-frenos" role="tabpanel" aria-labelledby="v-pills-frenos-tab" tabindex="0">Nuestros técnicos expertos 
                 se encargan del mantenimiento y reparación de sistemas de frenos para asegurar una respuesta eficiente y segura al frenar.</div>
               <div class="tab-pane fade" id="v-pills-escaneo" role="tabpanel" aria-labelledby="v-pills-escaneo-tab" tabindex="0">Realizamos escaneo automotriz 
