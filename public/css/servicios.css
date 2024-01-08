@@ -60,7 +60,7 @@ h2 {
     padding-right: 10px;
 }
 
-.img-service, .img-audi, .img-vento, .img-bmw-wheel {
+.img-service, .img-audi, .img-vento, .img-bmw-wheel, .img-scanner {
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -69,7 +69,7 @@ h2 {
     max-width: 49%;
 }
 
-.img-bmw-wheel {
+.img-bmw-wheel, .img-scanner {
     max-width: 100%;
 }
 
