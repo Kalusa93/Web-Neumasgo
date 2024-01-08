@@ -10,10 +10,10 @@ const productsController = {
         res.render('products/products', {title: 'Productos', css: 'products.css', products});
     },
 
-    cubiertasAuto: (req, res) => {
-        let national = products.filter( product => product.category == 'national')
+    neumaticos: (req, res) => {
+        let neumaticos = products.filter( product => product.category == 'auto')
 
-        res.render('products/products', {title: 'Auto', css: 'products.css', cubiertasAuto});
+        res.render('products/products', {title: 'Auto', css: 'products.css', products: neumaticos});
     },
 
     cubiertasCamioneta: (req, res) => {

@@ -19,8 +19,9 @@ const upload = multer({ storage: storage });
 
 const routes = {
     home: '/',
-    cubiertasAuto: '/cubiertas-auto',
-    cubiertasCamioneta: '/cubiertas-camioneta',
+    neumaticos: '/neumaticos',
+    aceites: '/aceites',
+    baterias: '/baterias',
     detail: '/detail/:id',
     add: '/add',
     edit: '/edit/:id',
@@ -30,9 +31,7 @@ const routes = {
 // GET PRODUCTS
 router.get(routes.home, controller.products);
 
-router.get(routes.cubiertasAuto, controller.cubiertasAuto);
-
-router.get(routes.cubiertasCamioneta, controller.cubiertasCamioneta);
+router.get(routes.neumaticos, controller.neumaticos);
 
 router.get(routes.detail, controller.detail);
 
