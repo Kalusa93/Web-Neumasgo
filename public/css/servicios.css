@@ -60,13 +60,17 @@ h2 {
     padding-right: 10px;
 }
 
-.img-service, .img-audi, .img-vento {
+.img-service, .img-audi, .img-vento, .img-bmw-wheel {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .img-audi, .img-vento {
     max-width: 49%;
+}
+
+.img-bmw-wheel {
+    max-width: 100%;
 }
 
 @media (min-width: 992px) {
