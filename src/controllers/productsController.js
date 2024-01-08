@@ -10,16 +10,28 @@ const productsController = {
         res.render('products/products', {title: 'Productos', css: 'products.css', products});
     },
 
-    national: (req, res) => {
+    cubiertasAuto: (req, res) => {
         let national = products.filter( product => product.category == 'national')
 
-        res.render('products/national', {title: 'Nacionales', css: 'products.css', national});
+        res.render('products/products', {title: 'Auto', css: 'products.css', cubiertasAuto});
     },
 
-    imported: (req, res) => {
+    cubiertasCamioneta: (req, res) => {
         let imported = products.filter( product => product.category == 'international')
 
-        res.render('products/imported', {title: 'Importados', css: 'products.css', imported});
+        res.render('products/products', {title: 'Camioneta', css: 'products.css', cubiertasCamioneta});
+    },
+
+    cubiertasCamion: (req, res) => {
+        let imported = products.filter( product => product.category == 'international')
+
+        res.render('products/products', {title: 'Camion', css: 'products.css', cubiertasCamioneta});
+    },
+    
+    cubiertasVial: (req, res) => {
+        let imported = products.filter( product => product.category == 'international')
+
+        res.render('products/products', {title: 'Vial', css: 'products.css', cubiertasCamioneta});
     },
 
     detail: (req, res) => {

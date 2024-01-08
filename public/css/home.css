@@ -65,7 +65,7 @@ li a.active, li a:hover{
 
 /*Dropdown*/
 nav ul li ul.dropdown{
-    top: 4%;
+    top: 4.5%;
     width: 150px;
     background: #003084;
     position: absolute;
