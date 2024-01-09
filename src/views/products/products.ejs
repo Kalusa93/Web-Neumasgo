@@ -17,18 +17,16 @@
         <section>
             <div class="products">
                 <% products.forEach((product) => { %>
-                    <a href="/products/detail/<%=product.id %>" class="main-article">
+                    <!--<a href="/products/detail/<%=product.id %>" class="main-article">-->
                         <div class="image-article">
                             <img src="/img/products/<%= product.image %>" alt="">
                         </div>
                         <div class="details-article">
                             <h4><%= product.name %></h4>
-                            <p class="category"><strong>Categoría</strong> <%= product.category %></p>
-                            <p class="origin"><strong>Origen: </strong> <%= product.origin %></p>
-                            <p class="origin"><strong>Descripción: </strong> <%= product.description %></p>
-                            <p class="price"><%= product.price %></p>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <i class="fa-regular fa-heart"></i>
+                            <p class="category"><strong>Marca:</strong> <%= product.marca %></p>
+                            <p class="origin"><strong>Categoría: </strong> <%= product.category %></p>
+                            <p class="origin"><strong>Subcategoría: </strong> <%= product.subcategory %></p>
+                            <p class="price"><strong>Precio: </strong> <%= product.price %></p>
                         </div>
                     </a>
                 <% }) %>

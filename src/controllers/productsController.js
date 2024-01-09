@@ -11,7 +11,7 @@ const productsController = {
     },
 
     neumaticos: (req, res) => {
-        let neumaticos = products.filter( product => product.category == 'auto')
+        let neumaticos = products.filter( product => product.category == 'Neumáticos')
 
         res.render('products/neumaticos', {title: 'Neumáticos', css: 'home.css', products: neumaticos});
     },
