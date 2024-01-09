@@ -1,21 +1,21 @@
 [
   {
     "id": 1,
-    "name": "175/65 R14",
-    "category": "auto",
+    "name": "175/65 R14 Prestiva",
+    "marca": "Fate",
+    "category": "Neumáticos",
+    "subcategory": "Auto",
     "price": "A consultar",
-    "origin": "Brasil",
-    "description": "gg",
     "image": "175_r14_prestiva.png"
   },
   {
     "id": 2,
-    "name": "225/45 R17",
-    "category": "auto",
+    "name": "225/45 R17 Efficientgrip",
+    "marca": "Goodyear",
+    "category": "Neumáticos",
+    "subcategory": "Auto",
     "price": "A consultar",
-    "origin": "Cifuentes",
-    "description": "Blanco",
-    "image": "catena.png"
+    "image": "225_45_r17_efficientgrip.png"
   },
   {
     "id": 3,
@@ -115,5 +115,50 @@
     "origin": "mendoza",
     "description": "tinto",
     "image": "1702338008287-1702061894469-img-samsung-galaxy-s10.jpg"
+  },
+  {
+    "id": 17,
+    "name": "175/65 R14 Prestiva",
+    "marca": "Fate",
+    "category": "Neumáticos",
+    "subcategory": "Auto",
+    "price": "A consultar",
+    "image": "175_r14_prestiva.png"
+  },
+  {
+    "id": 18,
+    "name": "175/65 R14 Prestiva",
+    "marca": "Fate",
+    "category": "Neumáticos",
+    "subcategory": "Auto",
+    "price": "A consultar",
+    "image": "175_r14_prestiva.png"
+  },
+  {
+    "id": 19,
+    "name": "175/65 R14 Prestiva",
+    "marca": "Fate",
+    "category": "Neumáticos",
+    "subcategory": "Auto",
+    "price": "A consultar",
+    "image": "175_r14_prestiva.png"
+  },
+  {
+    "id": 20,
+    "name": "175/65 R14 Prestiva",
+    "marca": "Fate",
+    "category": "Neumáticos",
+    "subcategory": "Auto",
+    "price": "A consultar",
+    "image": "175_r14_prestiva.png"
+  },
+  {
+    "id": 21,
+    "name": "175/65 R14 Prestiva",
+    "marca": "Fate",
+    "category": "Neumáticos",
+    "subcategory": "Auto",
+    "price": "A consultar",
+    "image": "175_r14_prestiva.png"
   }
 ]
