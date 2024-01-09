@@ -7,7 +7,7 @@ const path = require('path');
 // MULTER - Manejo del almacenamiento
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-      cb(null, path.resolve(__dirname, "../../public/images/products"));
+      cb(null, path.resolve(__dirname, "../../public/img/products"));
     },
     filename: (req, file, cb) => {
       cb(null, Date.now() + "-" + file.originalname);

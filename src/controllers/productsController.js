@@ -7,13 +7,13 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 const productsController = {
 
     products: (req, res) => {
-        res.render('products/products', {title: 'Productos', css: 'products.css', products});
+        res.render('products/products', {title: 'Productos', css: 'home.css', products});
     },
 
     neumaticos: (req, res) => {
         let neumaticos = products.filter( product => product.category == 'auto')
 
-        res.render('products/products', {title: 'Auto', css: 'products.css', products: neumaticos});
+        res.render('products/neumaticos', {title: 'Neumáticos', css: 'home.css', products: neumaticos});
     },
 
     cubiertasCamioneta: (req, res) => {
