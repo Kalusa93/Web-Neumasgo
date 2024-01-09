@@ -7,7 +7,7 @@ const path = require('path');
 // MULTER - Manejo del almacenamiento
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-      cb(null, path.resolve(__dirname, "../../public/images/products"));
+      cb(null, path.resolve(__dirname, "../../public/img/products"));
     },
     filename: (req, file, cb) => {
       cb(null, Date.now() + "-" + file.originalname);
@@ -19,8 +19,9 @@ const upload = multer({ storage: storage });
 
 const routes = {
     home: '/',
-    national: '/national',
-    imported: '/imported',
+    neumaticos: '/neumaticos',
+    aceites: '/aceites',
+    baterias: '/baterias',
     detail: '/detail/:id',
     add: '/add',
     edit: '/edit/:id',
@@ -30,9 +31,7 @@ const routes = {
 // GET PRODUCTS
 router.get(routes.home, controller.products);
 
-router.get(routes.national, controller.national);
-
-router.get(routes.imported, controller.imported);
+router.get(routes.neumaticos, controller.neumaticos);
 
 router.get(routes.detail, controller.detail);
 

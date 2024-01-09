@@ -7,19 +7,31 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 const productsController = {
 
     products: (req, res) => {
-        res.render('products/products', {title: 'Productos', css: 'products.css', products});
+        res.render('products/products', {title: 'Productos', css: 'home.css', products});
     },
 
-    national: (req, res) => {
-        let national = products.filter( product => product.category == 'national')
+    neumaticos: (req, res) => {
+        let neumaticos = products.filter( product => product.category == 'auto')
 
-        res.render('products/national', {title: 'Nacionales', css: 'products.css', national});
+        res.render('products/neumaticos', {title: 'Neumáticos', css: 'home.css', products: neumaticos});
     },
 
-    imported: (req, res) => {
+    cubiertasCamioneta: (req, res) => {
         let imported = products.filter( product => product.category == 'international')
 
-        res.render('products/imported', {title: 'Importados', css: 'products.css', imported});
+        res.render('products/products', {title: 'Camioneta', css: 'products.css', cubiertasCamioneta});
+    },
+
+    cubiertasCamion: (req, res) => {
+        let imported = products.filter( product => product.category == 'international')
+
+        res.render('products/products', {title: 'Camion', css: 'products.css', cubiertasCamioneta});
+    },
+    
+    cubiertasVial: (req, res) => {
+        let imported = products.filter( product => product.category == 'international')
+
+        res.render('products/products', {title: 'Vial', css: 'products.css', cubiertasCamioneta});
     },
 
     detail: (req, res) => {
