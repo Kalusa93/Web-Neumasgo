@@ -16,6 +16,12 @@ const productsController = {
         res.render('products/products', {title: 'Neumáticos', css: 'products.css', products: neumaticos});
     },
 
+    aceites: (req, res) => {
+        let aceites = products.filter( product => product.category == 'Aceites')
+
+        res.render('products/products', {title: 'Aceites', css: 'products.css', products: aceites});
+    },
+
     cubiertasCamioneta: (req, res) => {
         let imported = products.filter( product => product.category == 'international')
 

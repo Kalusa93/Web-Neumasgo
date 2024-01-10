@@ -33,6 +33,8 @@ router.get(routes.home, controller.products);
 
 router.get(routes.neumaticos, controller.neumaticos);
 
+router.get(routes.aceites, controller.aceites);
+
 router.get(routes.detail, controller.detail);
 
 // ADD PRODUCTS
