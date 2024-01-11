@@ -16,10 +16,11 @@
 
     <main>
         <section>
+            <h2><%= title %></h2>
             <div class="products">
                 <% products.forEach((product) => { %>
-                    <!--<a href="/products/detail/<%=product.id %>" class="main-article">-->
-                        <div class="product">
+                    <div class="product">
+                        <a href="/products/detail/<%=product.id %>" class="main-article">
                             <div class="image-article">
                                 <img src="/img/products/<%= product.image %>" class="img-article" alt="">
                             </div>
@@ -30,9 +31,8 @@
                                 <p class="subcategory"><strong>Subcategoría: </strong> <%= product.subcategory %></p>
                                 <p class="price"><strong>Precio: </strong> <%= product.price %></p>
                             </div>
-                        </div>
-                        
-                    </a>
+                        </a>
+                    </div>
                 <% }) %>
             </div>
         </section>
