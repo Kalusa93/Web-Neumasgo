@@ -4,26 +4,48 @@
     font-family: 'Mohave', sans-serif;
 }
 @media (min-width:0) {
-main{
+
+.site-content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    background-color: #eeeeee;
 }
+
+.container-product {
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee;
+    width: 80%;
+}
+
+.show-img-product {
+    background-color: #ffffff;
+    margin-right: 0;
+}
+
 section{
-    margin: 5%;
-    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 3%;
 }
+
 section img{
     width: 80%;
     max-width: 300px;
 }
+
 .img-product {
     text-align: center;
 }
+
 .description-product{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #ffffff;
+    margin-left: 0;
 }
 .description-product div{
     display: flex;
@@ -37,7 +59,7 @@ section img{
     border-radius: 20px;
     color: #FFFFFF;
     letter-spacing: 2px;
-    background-color: #5E0D26;
+    background-color: #003084;
     padding: 14px 28px;
     font-size: 16px;
     cursor: pointer;
@@ -83,9 +105,6 @@ section img{
 
     section{
         width: 45%;
-        border: 1px solid black;
-        border-radius: 10px;
-        
     }
     
     .description-product h3{

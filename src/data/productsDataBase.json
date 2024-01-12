@@ -6,7 +6,8 @@
     "category": "Neumáticos",
     "subcategory": "Auto",
     "price": "A consultar",
-    "image": "165_70_r13_fate_sentiva.png"
+    "image": "165_70_r13_fate_sentiva.png",
+    "description": " Un neumatico equilibrado que brinda la máxima seguridad y confiabilidad, atendiendo los requerimientos de durabilidad y confort de marcha en un segmento dominado por usuarios particulares. Una actualización de la paleta de productos para un mercado en constante evolución."
   },
   {
     "id": 2,
@@ -15,7 +16,10 @@
     "category": "Neumáticos",
     "subcategory": "Auto",
     "price": "A consultar",
-    "image": "175_70_r13_fate_prestiva.png"
+    "image": "175_70_r13_fate_prestiva.png",
+    "description": ["Un neumatico equilibrado que brinda la máxima",
+    " seguridad y confiabilidad, atendiendo los requerimientos de durabilidad,",
+    " y confort de marcha en "]
   },
   {
     "id": 3,
