@@ -4,40 +4,81 @@
     font-family: 'Mohave', sans-serif;
 }
 @media (min-width:0) {
-main{
+
+.site-content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    background-color: #eeeeee;
 }
+
+.container-product {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #eeeeee;
+    width: 100%;
+}
+
+.show-img-product {
+    background-color: #ffffff;
+    margin-right: 0;
+    width: 39%;
+}
+
 section{
-    margin: 5%;
-    padding: 5%;
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 3%;
 }
+
 section img{
     width: 80%;
     max-width: 300px;
 }
+
 .img-product {
     text-align: center;
 }
+
 .description-product{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #ffffff;
+    margin-left: 0;
+    width: 39%;
 }
+
 .description-product div{
     display: flex;
     /* align-items: center; */
 }
+
 .description-product h3{
     margin: 3%;
 }
+
+.description-partial, .description-partial-h2 {
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.description-partial-h2 {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
 #buy-now {
     border: none;
     border-radius: 20px;
     color: #FFFFFF;
     letter-spacing: 2px;
-    background-color: #5E0D26;
+    background-color: #003084;
     padding: 14px 28px;
     font-size: 16px;
     cursor: pointer;
@@ -83,9 +124,6 @@ section img{
 
     section{
         width: 45%;
-        border: 1px solid black;
-        border-radius: 10px;
-        
     }
     
     .description-product h3{
