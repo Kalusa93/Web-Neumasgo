@@ -14,18 +14,19 @@
 .container-product {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     background-color: #eeeeee;
-    width: 80%;
+    width: 100%;
 }
 
 .show-img-product {
     background-color: #ffffff;
     margin-right: 0;
+    width: 39%;
 }
 
 section{
     margin-top: 5%;
-    margin-bottom: 5%;
     margin-left: 4%;
     margin-right: 4%;
     padding: 3%;
@@ -46,14 +47,32 @@ section img{
     justify-content: center;
     background-color: #ffffff;
     margin-left: 0;
+    width: 39%;
 }
+
 .description-product div{
     display: flex;
     /* align-items: center; */
 }
+
 .description-product h3{
     margin: 3%;
 }
+
+.description-partial, .description-partial-h2 {
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.description-partial-h2 {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
 #buy-now {
     border: none;
     border-radius: 20px;
