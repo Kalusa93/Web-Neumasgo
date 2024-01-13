@@ -1,52 +1,28 @@
 [
   {
     "id": 1,
-    "name": "165/70 R13 Fate Prestiva",
+    "name": "Fate Sentiva AR-360",
     "marca": "Fate",
     "category": "Neumáticos",
     "subcategory": "Auto",
+    "range": "T, H",
     "price": "A consultar",
     "image": "165_70_r13_fate_sentiva.png"
   },
   {
     "id": 2,
-    "name": "175/70 R13 Fate Prestiva",
+    "name": "Fate Prestiva",
     "marca": "Fate",
     "category": "Neumáticos",
     "subcategory": "Auto",
+    "range": "T",
     "price": "A consultar",
     "image": "175_70_r13_fate_prestiva.png"
   },
+  
   {
     "id": 3,
-    "name": "175/65 R14 Fate Prestiva",
-    "marca": "Fate",
-    "category": "Neumáticos",
-    "subcategory": "Auto",
-    "price": "A consultar",
-    "image": "175_r14_prestiva.png"
-  },
-  {
-    "id": 4,
-    "name": "185/65 R14 Fate Sentiva",
-    "marca": "Fate",
-    "category": "Neumáticos",
-    "subcategory": "Auto",
-    "price": "A consultar",
-    "image": "185_65_r14_fate_sentiva.png"
-  },
-  {
-    "id": 5,
-    "name": "185/65 R15 Goodyear Assurance",
-    "marca": "Goodyear",
-    "category": "Neumáticos",
-    "subcategory": "Auto",
-    "price": "A consultar",
-    "image": "185_65_r15_goodyear_assurance.png"
-  },
-  {
-    "id": 6,
-    "name": "195/55 R15 Fate Sentiva Sport",
+    "name": "Fate Sentiva Sport",
     "marca": "Fate",
     "category": "Neumáticos",
     "subcategory": "Auto",
@@ -54,8 +30,17 @@
     "image": "195_55_r15_fate_sentiva_sport.png"
   },
   {
+    "id": 5,
+    "name": "Goodyear Assurance",
+    "marca": "Goodyear",
+    "category": "Neumáticos",
+    "subcategory": "Auto",
+    "price": "A consultar",
+    "image": "185_65_r15_goodyear_assurance.png"
+  },
+  {
     "id": 7,
-    "name": "225/45 R17 Goodyear Efficientgrip",
+    "name": "Goodyear Efficientgrip",
     "marca": "Goodyear",
     "category": "Neumáticos",
     "subcategory": "Auto",
@@ -64,7 +49,7 @@
   },
   {
     "id": 8,
-    "name": "265/65 R17 Goodyear Wrangler",
+    "name": "Goodyear Wrangler",
     "marca": "Goodyear",
     "category": "Neumáticos",
     "subcategory": "Camioneta",
@@ -73,7 +58,7 @@
   },
   {
     "id": 9,
-    "name": "245/65 R17 Pirelli Scorpion",
+    "name": "Pirelli Scorpion",
     "marca": "Pirelli",
     "category": "Neumáticos",
     "subcategory": "Camioneta",
@@ -82,7 +67,7 @@
   },
   {
     "id": 10,
-    "name": "265/60 R18 Bridgestone Dueler ",
+    "name": "Bridgestone Dueler ",
     "marca": "Bridgestone",
     "category": "Neumáticos",
     "subcategory": "Camioneta",

@@ -26,7 +26,7 @@
 }
 
 section{
-    margin-top: 5%;
+    margin-top: 4%;
     margin-left: 4%;
     margin-right: 4%;
     padding: 3%;
@@ -66,11 +66,16 @@ section img{
     margin-right: 11%;
     margin-top: 0;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 .description-partial-h2 {
     margin-bottom: 0;
     padding-bottom: 20px;
+}
+
+.fa-solid.fa-check {
+    color: #003084;
 }
 
 #buy-now {
