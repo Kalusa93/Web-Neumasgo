@@ -36,6 +36,10 @@
               <p class="marca"><strong>Marca:</strong> <%= product.marca %></p>
               <p class="category"><strong>Categoría: </strong> <%= product.category %></p>
               <p class="subcategory"><strong>Subcategoría: </strong> <%= product.subcategory %></p>
+              <% if (product.category == "Neumáticos") { %>
+                <p class="range"><strong>Rango: </strong> <%= product.range %></p>
+              <% } %>
+              
             </div>
             <a href="https://wa.me/3854128280">
               <button type="submit" id="buy-now">Consultar disponibilidad</button>
@@ -51,6 +55,8 @@
           </section>
             <% if (product.id == 1 ) { %>
               <%- include('../partials/descripcionSentiva.ejs') %>
+            <% } else if (product.id == 2 ) { %>
+              <%- include('../partials/descripcionPrestiva.ejs') %>
             <% } %>
         </div>
       </div>
