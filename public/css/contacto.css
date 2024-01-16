@@ -15,6 +15,14 @@
     max-width: 100%;
 }
 
+.red-social-contacto {
+    padding-bottom: 20px;
+}
+
+.gm-link {
+    margin-bottom: 100px;
+}
+
 @media (max-width: 500px) {
     .fa-brands, .fa-solid {
         padding-left: 0;
@@ -22,5 +30,6 @@
     }
     .fb-link, .ig-link, .wp-link, .gm-link {
         padding-left: 0;
+        font-size: 16px;
     }
 }
