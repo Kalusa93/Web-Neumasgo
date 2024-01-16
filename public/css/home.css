@@ -54,6 +54,8 @@ img {
     width: 100%;
     margin: 20px auto;
     text-align: center;
+    position: static;
+    background-color: #ffffff;
 }
 .marcas-inicio ul li {
     display: inline-block;
@@ -63,11 +65,10 @@ img {
     text-align: center;
 }
 
-@media (max-width: 350px) {
-    #marca {
-        width: 100%;
-        margin-left: 250px;
-        position: static !important;
+@media (max-width: 500px) {
+    .img-responsive.pirelli {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
 }
