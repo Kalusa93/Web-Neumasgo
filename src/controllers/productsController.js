@@ -28,22 +28,27 @@ const productsController = {
         res.render('products/products', {title: 'Baterías', css: 'products.css', products: baterias});
     },
 
-    cubiertasCamioneta: (req, res) => {
-        let imported = products.filter( product => product.category == 'international')
+    neumaticosAuto: (req, res) => {
+        let neumaticosAuto = products.filter( product => product.category == 'Neumáticos' && product.subcategory == 'Auto')
 
-        res.render('products/products', {title: 'Camioneta', css: 'products.css', cubiertasCamioneta});
+        res.render('products/products', {title: 'Neumáticos Auto', css: 'products.css', products: neumaticosAuto});
+    },
+    neumaticosCamioneta: (req, res) => {
+        let neumaticosCamioneta = products.filter( product => product.category == 'Neumáticos' && product.subcategory == 'Camioneta')
+
+        res.render('products/products', {title: 'Neumáticos Camioneta', css: 'products.css', products: neumaticosCamioneta});
     },
 
-    cubiertasCamion: (req, res) => {
-        let imported = products.filter( product => product.category == 'international')
+    neumaticosCamion: (req, res) => {
+        let neumaticosCamion = products.filter( product => product.category == 'Neumáticos' && product.subcategory == 'Camión')
 
-        res.render('products/products', {title: 'Camion', css: 'products.css', cubiertasCamioneta});
+        res.render('products/products', {title: 'Neumáticos Camión', css: 'products.css', products: neumaticosCamion});
     },
     
-    cubiertasVial: (req, res) => {
-        let imported = products.filter( product => product.category == 'international')
+    neumaticosVial: (req, res) => {
+        let neumaticosVial = products.filter( product => product.category == 'Neumáticos' && product.subcategory == 'Vial')
 
-        res.render('products/products', {title: 'Vial', css: 'products.css', cubiertasCamioneta});
+        res.render('products/products', {title: 'Neumáticos Vial', css: 'products.css', products: neumaticosVial});
     },
 
     detail: (req, res) => {

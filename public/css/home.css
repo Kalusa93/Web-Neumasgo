@@ -8,100 +8,16 @@
 .body{
     color: black;
 }
-a{
-    text-decoration: none !important;
-}
-nav{
-    background-color: #003084;
-    height: 100px;
-    width: 100%;
-}
-.enlace{
-    position: absolute;
-    padding: 20px 100px;
-}
-.logo{
-    margin-left: 60px;
-    height: 60px;
-}
-nav ul{
-    float: right;
-    margin-right: 160px;
-    margin-top: 30px;
-}
-nav ul li{
-    font-weight: 500;
-    display: inline-block;
-    line-height: 40px;
-}
-nav ul li a, a{
-    color: #fff;
-    font-family: Barlow, sans-serif;
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-}
 
-h1, h2, h3, p {
-    font-family: Barlow, sans-serif;
-}
-
-li a.active, li a:hover{
-    color: none;
-    transition: .5s;
-}
-.checkbtn{
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
-
-/*Dropdown*/
-nav ul li ul.dropdown{
-    top: 39px;
-    width: 150px;
-    background: #003084;
-    position: absolute;
-    z-index: 999;
-    display: none;
-    text-align: left;
-    border: 1px solid #ccc;
-    padding: 0;
-}
-nav ul li ul.dropdown li{
-    font-weight: 500;
-    display: block;
-    line-height: 30px;
-    border: 1px solid #ccc;
-    width: 100%;
-}
-nav ul li ul.dropdown li a{
-    display: block;
-    width: 100%;
-    padding: 7px 13px;
-}
-nav ul li a:hover{
-    background: #06225B;
-    color: #F9C440;
-}
-nav ul li:hover ul.dropdown{
-    display: block;
-    list-style: none;
-}
 /*Slider*/
 .carousel-inner{
     background-color: #F9C440;
     position: relative;
     width: 100%;
+    min-width: 350px;
     overflow: hidden;
-    height: 300px;
+    height: 60%;
+    max-height: 300px;
 }
 .carousel-inner img{
     max-width: 80%;
@@ -113,29 +29,43 @@ nav ul li:hover ul.dropdown{
 }
 
 /* Cubiertas */
-.img-responsive, .thumbnail a>img, .thumbnail>img {
-    display: block;
+.img-responsive {
     max-width: 100%;
     height: auto;
+    max-height: 350px;
+    width: auto;
+    padding-left: 20px;
+}
+
+.img-responsive.home {
+    padding-bottom: 20px;
+}
+
+.banner-liquimoly {
+    width: 100%;
 }
 
 .marcas-inicio {
     padding: 25px 0;
-    background-color: #f2f2f2;
 }
-img, svg {
+.marcas {
+    height: auto;
+}
+h3 {
+    text-align: center;
+}
+img {
     vertical-align: middle;
-    overflow: clip;
-}
-.img-responsive{
-    max-height: 350px;
-    width: auto;
+    overflow: hidden;
+    overflow-clip-margin: 0px;
 }
 .marcas-inicio ul {
     display: block;
     width: 100%;
     margin: 20px auto;
     text-align: center;
+    position: static;
+    background-color: #ffffff;
 }
 .marcas-inicio ul li {
     display: inline-block;
@@ -145,55 +75,9 @@ img, svg {
     text-align: center;
 }
 
-@media (max-width:800px){
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns:repeat(1, 1fr);
-        padding: 35px 0px;
-    }
-}
-
-/*barra responsive*/
-@media (max-width: 1400px) {
-    .enlace{
-        margin-left: 20px;
-    }
-}
-@media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-@media (max-width: 858px) {
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #F9C440;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    li a:hover, li a.active{
-        background: none;
-        color: white;
-    }
-    #check:checked ~ul{
-        left: 0;
+@media (max-width: 500px) {
+    .img-responsive.pirelli {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }

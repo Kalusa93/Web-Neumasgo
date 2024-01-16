@@ -11,6 +11,16 @@
     margin: 20px auto;
 }
 
-.map {
+.map-iframe {
     max-width: 100%;
+}
+
+@media (max-width: 500px) {
+    .fa-brands, .fa-solid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fb-link, .ig-link, .wp-link, .gm-link {
+        padding-left: 0;
+    }
 }

@@ -20,6 +20,12 @@ const upload = multer({ storage: storage });
 const routes = {
     home: '/',
     neumaticos: '/neumaticos',
+    neumaticosAuto: '/neumaticos/auto',
+    neumaticosCamioneta: '/neumaticos/camioneta',
+    neumaticosAuto: '/neumaticos/auto',
+    neumaticosCamioneta: '/neumaticos/camioneta',
+    neumaticosCamion: '/neumaticos/camion',
+    neumaticosVial: '/neumaticos/vial',
     aceites: '/aceites',
     baterias: '/baterias',
     detail: '/detail/:id',
@@ -32,6 +38,14 @@ const routes = {
 router.get(routes.home, controller.products);
 
 router.get(routes.neumaticos, controller.neumaticos);
+
+router.get(routes.neumaticosAuto, controller.neumaticosAuto);
+
+router.get(routes.neumaticosCamioneta, controller.neumaticosCamioneta);
+
+router.get(routes.neumaticosCamion, controller.neumaticosCamion);
+
+router.get(routes.neumaticosVial, controller.neumaticosVial);
 
 router.get(routes.aceites, controller.aceites);
 
