@@ -30,7 +30,8 @@ img {
 
 .img-article {
     display: flex;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -76,8 +77,5 @@ img {
 @media (max-width: 450px) {
     .product {
         width: 100%;
-    }
-    .img-article {
-        width: auto;
     }
 }
