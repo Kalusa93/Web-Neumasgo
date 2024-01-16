@@ -27,6 +27,9 @@
     font-size: 20px;
     font-family: Barlow, sans-serif;
 }
+h2 {
+    text-align: left;
+}
 .pie-pagina .grupo-1 .box p{
     color: #efefef;
     margin-bottom: 10px;
