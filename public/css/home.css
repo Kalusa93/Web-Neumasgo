@@ -38,7 +38,6 @@ html, body{
     height: auto;
     max-height: 350px;
     width: auto;
-    padding-left: 20px;
 }
 
 .img-responsive.home {
@@ -54,6 +53,7 @@ html, body{
 }
 .marcas {
     height: auto;
+    padding-left: 0;
 }
 h3 {
     text-align: center;
@@ -94,7 +94,7 @@ img {
         padding-bottom: 20px;
         padding-left: 0;
     }
-    .img-responsive.marca {
+    .img-responsive.marca, .img-responsive.home {
         padding-left: 0;
     }
 }
