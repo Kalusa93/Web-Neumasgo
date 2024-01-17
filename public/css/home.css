@@ -5,6 +5,10 @@
     list-style: none;
     box-sizing: border-box;
 }
+html, body{
+    width:100%;
+    overflow-x:hidden;
+  }
 .body{
     color: black;
 }
@@ -79,5 +83,9 @@ img {
     .img-responsive.pirelli {
         padding-top: 20px;
         padding-bottom: 20px;
+        padding-left: 0;
+    }
+    .img-responsive.marca {
+        padding-left: 0;
     }
 }

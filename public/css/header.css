@@ -146,5 +146,8 @@ nav ul li:hover ul.dropdown{
             margin-left: 10px;
             margin-top: 20px;
         }
+        .nav-menu {
+            padding-left: 0;
+        }
     }
 }
