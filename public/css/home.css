@@ -79,6 +79,15 @@ img {
     text-align: center;
 }
 
+@media (max-width: 858px) {
+    #carouselAutoplaying {
+        z-index: 1;
+    }
+    .nav-menu {
+        z-index: 2; /* Ajusta el valor según sea necesario */
+    }
+}
+
 @media (max-width: 500px) {
     .img-responsive.pirelli {
         padding-top: 20px;
