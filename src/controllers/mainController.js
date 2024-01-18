@@ -21,13 +21,13 @@ const controller = {
         res.render('servicios', {title: 'Servicios', css: 'servicios.css'});
     },
 
-    search: (req, res) => {
+    /* search: (req, res) => {
         let words = req.query.keywords;
 
         let search = products.filter(p => p.name.toLowerCase().includes(words.toLowerCase()))
 
         res.render('search', {title: 'Resultados de la busqueda', css:'products.css', products: search})
-    }
+    } */
 };
 
 module.exports = controller;
