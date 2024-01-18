@@ -29,9 +29,9 @@ const routes = {
     aceites: '/aceites',
     baterias: '/baterias',
     detail: '/detail/:id',
-    add: '/add',
-    edit: '/edit/:id',
-    delete: '/delete/:id',
+    //add: '/add',
+    //edit: '/edit/:id',
+    //delete: '/delete/:id',
 };
 
 // GET PRODUCTS
@@ -54,15 +54,15 @@ router.get(routes.baterias, controller.baterias);
 router.get(routes.detail, controller.detail);
 
 // ADD PRODUCTS
-router.get(routes.add, controller.add);
+//router.get(routes.add, controller.add);
 
-router.post(routes.add, upload.single('image'), controller.create);
+//router.post(routes.add, upload.single('image'), controller.create);
 
 //EDIT PRODUCTS
-router.get(routes.edit, controller.edit);
-router.put(routes.edit, upload.single('image'), controller.update);
+//router.get(routes.edit, controller.edit);
+//router.put(routes.edit, upload.single('image'), controller.update);
 
 // DELETE PRODUCT
-router.delete(routes.delete, controller.delete);
+//router.delete(routes.delete, controller.delete);
 
 module.exports = router;
