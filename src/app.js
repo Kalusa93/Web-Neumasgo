@@ -20,13 +20,13 @@ app.use(methodOverride('_method'));
 //Sección de Requerimiento de Rutas
 const mainRouter = require('./routes/main');
 const productsRouter = require('./routes/products');
-const cartRouter = require('./routes/cart');
+//const cartRouter = require('./routes/cart');
 const usersRouter = require('./routes/users');
 
 //Sección de Rutas
 app.use('/', mainRouter);
 app.use('/products', productsRouter);
-app.use('/cart', cartRouter);
+//app.use('/cart', cartRouter);
 app.use('/users', usersRouter);
 
 app.use((req, res, next) => {
