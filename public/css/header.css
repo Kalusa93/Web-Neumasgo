@@ -25,14 +25,26 @@ nav ul li{
     display: inline-block;
     line-height: 40px;
 }
-nav ul li a, a{
+nav ul li a, a, .btn.btn-secondary.dropdown-toggle{
     color: #fff;
     font-family: Barlow, sans-serif;
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
+    font-weight: 500;
 }
-
+.btn.btn-secondary.dropdown-toggle {
+    background-color: #003084;
+    border: none;
+    margin-top: -5px;
+}
+.btn.btn-secondary.dropdown-toggle:hover {
+    color: #F9C440;
+    background-color: #06225B;
+}
+.dropdown-menu.show, li.dropdown-item:hover {
+    background-color: #003084;
+}
 h1, h2, h3, p {
     font-family: Barlow, sans-serif;
 }
@@ -71,7 +83,6 @@ nav ul li ul.dropdown{
     padding: 0;
 }
 nav ul li ul.dropdown li{
-    font-weight: 500;
     display: block;
     line-height: 30px;
     border: 1px solid #ccc;
@@ -82,7 +93,7 @@ nav ul li ul.dropdown li a{
     width: 100%;
     padding: 7px 13px;
 }
-nav ul li a:hover{
+nav ul li a:hover, .dropdown-item{
     background: #06225B;
     color: #F9C440;
 }
@@ -131,9 +142,11 @@ nav ul li:hover ul.dropdown{
     nav ul li a{
         font-size: 20px;
     }
-    li a:hover, li a.active{
-        background: none;
-        color: white;
+    li.dropdown-item {
+        margin: 0;
+    }
+    .dropdown-menu.show {
+        height: auto;
     }
     #check:checked ~ul{
         left: 0;
