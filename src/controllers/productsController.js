@@ -59,7 +59,7 @@ const productsController = {
         res.render('products/productDetail', {title: 'Detalle de Producto', css: 'productDetail.css', product});
     },
 
-    add: (req, res) => {
+    /* add: (req, res) => {
         res.render('products/addProduct', {title: 'Agregar Productos', css: 'addProduct.css'});
     },
     
@@ -91,9 +91,9 @@ const productsController = {
         let productToEdit = products.find(p => p.id == id);
 
         res.render('products/editProduct', {title: 'Editar Productos', css: 'editProduct.css', productToEdit});
-    },
+    }, */
     
-    update: (req, res) => {
+    /* update: (req, res) => {
         let indice = products.findIndex(p => p.id == req.params.id);
         
         products[indice].name = req.body.name
@@ -109,9 +109,9 @@ const productsController = {
         fs.writeFileSync(productsFilePath, JSON.stringify(products));
 
         res.redirect("/products");
-    },
+    }, */
 
-    delete: (req, res) => {
+    /* delete: (req, res) => {
         let indice = products.findIndex(p => p.id == req.params.id);
 
         products.splice(indice, 1);
@@ -119,7 +119,7 @@ const productsController = {
         fs.writeFileSync(productsFilePath, JSON.stringify(products));
 
         res.redirect("/products");
-    }
+    } */
 };
 
 module.exports = productsController;
