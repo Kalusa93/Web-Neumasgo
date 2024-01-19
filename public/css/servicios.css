@@ -84,3 +84,16 @@ h2 {
         width: 75%;
     }
 }
+
+@media (max-width: 500px) {
+    .d-flex.align-items-start {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #v-pills-tab, #v-pills-tabContent {
+        width: 90%;
+    }
+    #v-pills-tab {
+        margin-bottom: 30px;
+    }
+}
