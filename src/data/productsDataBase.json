@@ -19,15 +19,25 @@
     "price": "A consultar",
     "image": "175_70_r13_fate_prestiva.png"
   },
-  
   {
     "id": 3,
     "name": "Fate Sentiva Sport",
     "marca": "Fate",
     "category": "Neumáticos",
     "subcategory": "Auto",
+    "range": "H",
     "price": "A consultar",
     "image": "195_55_r15_fate_sentiva_sport.png"
+  },
+  {
+    "id": 4,
+    "name": "Fate Eximia Pininfarina Sport",
+    "marca": "Fate",
+    "category": "Neumáticos",
+    "subcategory": "Auto",
+    "range": "W, Y",
+    "price": "A consultar",
+    "image": "pininfarinaSport.png"
   },
   {
     "id": 5,

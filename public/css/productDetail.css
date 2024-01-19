@@ -8,6 +8,11 @@
     height: auto;
     background-color: #ffffff;
 }
+
+li {
+    font-family: Barlow, sans-serif;;
+}
+
 @media (min-width:0) {
 
 .site-content {
