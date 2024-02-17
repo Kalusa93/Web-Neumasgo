@@ -15,30 +15,84 @@
     <%- include('../partials/header.ejs') %>
 
     <main>
-        <section>
-            <h2 class="h2-products"><%= title %></h2>
-            <div class="products">
-                <% products.forEach((product) => { %>
-                    <div class="product">
-                        <a href="/products/detail/<%=product.id %>" class="main-article">
-                            <div class="image-article">
-                                <img src="/img/products/<%= product.image %>" class="img-article" alt="">
-                            </div>
-                            <div class="details-article">
-                                <h4><%= product.name %></h4>
-                                <p class="marca"><strong>Marca:</strong> <%= product.marca %></p>
-                                <p class="category"><strong>Categoría: </strong> <%= product.category %></p>
-                                <p class="subcategory"><strong>Subcategoría: </strong> <%= product.subcategory %></p>
-                            </div>
-                        </a>
-                    </div>
-                <% }) %>
+        <div>
+            <div>
+                <input type="text" id="searchInput" placeholder="Buscar producto...">
+
             </div>
-        </section>
+            <select id="brandSelect">
+                <option value="">Selecciona una marca</option>
+                <!-- Aquí puedes generar dinámicamente las opciones de marca desde tu base de datos -->
+                <option value="fate">Fate</option>
+                <option value="goodyear">Goodyear</option>
+                <!-- Agrega más opciones según tus marcas disponibles -->
+            </select>
+            
+            <select id="vehicleTypeSelect">
+                <option value="">Selecciona un tipo de vehículo</option>
+                <!-- Agrega las opciones de tipo de vehículo que desees -->
+                <option value="tipo1">Tipo 1</option>
+                <option value="tipo2">Tipo 2</option>
+                <!-- Agrega más opciones según tus tipos de vehículo disponibles -->
+            </select>
+            
+            <section>
+                <h2 class="h2-products"><%= title %></h2>
+                <div class="products">
+                    <% products.forEach((product) => { %>
+                        <div class="product">
+                            <a href="/products/detail/<%=product.id %>" class="main-article">
+                                <div class="image-article">
+                                    <img src="/img/products/<%= product.image %>" class="img-article" alt="">
+                                </div>
+                                <div class="details-article">
+                                    <h4><%= product.name %></h4>
+                                    <p class="marca"><strong>Marca:</strong> <%= product.marca %></p>
+                                    <p class="category"><strong>Categoría: </strong> <%= product.category %></p>
+                                    <p class="subcategory"><strong>Subcategoría: </strong> <%= product.subcategory %></p>
+                                </div>
+                            </a>
+                        </div>
+                    <% }) %>
+                </div>
+            </section>
+        </div>
+        
     </main>
     <%- include('../partials/footer.ejs') %>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const brandSelect = document.getElementById('brandSelect');
+            const vehicleTypeSelect = document.getElementById('vehicleTypeSelect');
+            const products = document.querySelectorAll('.product');
+    
+            brandSelect.addEventListener('change', filterProducts);
+            vehicleTypeSelect.addEventListener('change', filterProducts);
+    
+            function filterProducts() {
+                const selectedBrand = brandSelect.value.toLowerCase();
+                const selectedVehicleType = vehicleTypeSelect.value.toLowerCase();
+    
+                products.forEach(function (product) {
+                    const productBrand = product.querySelector('.marca').textContent.toLowerCase();
+                    const productVehicleType = product.querySelector('.category').textContent.toLowerCase();
+    
+                    const brandMatch = selectedBrand === '' || productBrand.includes(selectedBrand);
+                    const vehicleTypeMatch = selectedVehicleType === '' || productVehicleType.includes(selectedVehicleType);
+    
+                    if (brandMatch && vehicleTypeMatch) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
+    
+    
 </body>
 </html>
