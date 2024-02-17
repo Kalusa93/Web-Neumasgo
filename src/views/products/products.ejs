@@ -16,10 +16,6 @@
 
     <main>
         <div>
-            <div>
-                <input type="text" id="searchInput" placeholder="Buscar producto...">
-
-            </div>
             <select id="brandSelect">
                 <option value="">Selecciona una marca</option>
                 <!-- Aquí puedes generar dinámicamente las opciones de marca desde tu base de datos -->
@@ -69,31 +65,32 @@
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-        const brandSelect = document.getElementById('brandSelect');
-        const vehicleTypeSelect = document.getElementById('vehicleTypeSelect');
-        const products = document.querySelectorAll('.product');
-        const currentPath = window.location.pathname; // Obtener la ruta actual
+            const brandSelect = document.getElementById('brandSelect');
+            const vehicleTypeSelect = document.getElementById('vehicleTypeSelect');
+            const products = document.querySelectorAll('.product');
+            const currentPath = window.location.pathname; // Obtener la ruta actual
 
-        brandSelect.addEventListener('change', filterProducts);
-        vehicleTypeSelect.addEventListener('change', filterProducts);
+            brandSelect.addEventListener('change', filterProducts);
+            vehicleTypeSelect.addEventListener('change', filterProducts);
 
-        function filterProducts() {
-            const selectedBrand = brandSelect.value.toLowerCase();
-            const selectedVehicleType = vehicleTypeSelect.value.toLowerCase();
+            function filterProducts() {
+                const selectedBrand = brandSelect.value.toLowerCase();
+                const selectedVehicleType = vehicleTypeSelect.value.toLowerCase();
 
-        products.forEach(function (product) {
-            const productBrand = product.querySelector('.marca').textContent.toLowerCase();
-            const productVehicleType = product.querySelector('.subcategory').textContent.toLowerCase();
+            products.forEach(function (product) {
+                const productBrand = product.querySelector('.marca').textContent.toLowerCase();
+                const productVehicleType = product.querySelector('.subcategory').textContent.toLowerCase();
 
-            const brandMatch = selectedBrand === '' || productBrand.includes(selectedBrand);
-            const vehicleTypeMatch = selectedVehicleType === '' || productVehicleType.includes(selectedVehicleType);
+                const brandMatch = selectedBrand === '' || productBrand.includes(selectedBrand);
+                const vehicleTypeMatch = selectedVehicleType === '' || productVehicleType.includes(selectedVehicleType);
 
-            if (brandMatch && vehicleTypeMatch) {
-                product.style.display = 'block';
-            } else {
-                product.style.display = 'none';
-            }
-        });
+                if (brandMatch) {
+                    product.style.display = 'block';
+                }
+                else {
+                    product.style.display = 'none';
+                }
+            });
         }
 
     // Generar dinámicamente las opciones de marca según la ruta actual
