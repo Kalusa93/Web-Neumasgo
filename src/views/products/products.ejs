@@ -23,16 +23,20 @@
             <select id="brandSelect">
                 <option value="">Selecciona una marca</option>
                 <!-- Aquí puedes generar dinámicamente las opciones de marca desde tu base de datos -->
-                <option value="fate">Fate</option>
-                <option value="goodyear">Goodyear</option>
+                <option value="Fate">Fate</option>
+                <option value="Goodyear">Goodyear</option>
+                <option value="Bridgestone">Bridgestone</option>
+                <option value="Pirelli">Pirelli</option>
                 <!-- Agrega más opciones según tus marcas disponibles -->
             </select>
             
             <select id="vehicleTypeSelect">
                 <option value="">Selecciona un tipo de vehículo</option>
                 <!-- Agrega las opciones de tipo de vehículo que desees -->
-                <option value="tipo1">Tipo 1</option>
-                <option value="tipo2">Tipo 2</option>
+                <option value="Auto">Auto</option>
+                <option value="Camioneta">Camioneta</option>
+                <option value="Camion">Camión</option>
+                <option value="Vial">Vial</option>
                 <!-- Agrega más opciones según tus tipos de vehículo disponibles -->
             </select>
             
@@ -65,34 +69,73 @@
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const brandSelect = document.getElementById('brandSelect');
-            const vehicleTypeSelect = document.getElementById('vehicleTypeSelect');
-            const products = document.querySelectorAll('.product');
+        const brandSelect = document.getElementById('brandSelect');
+        const vehicleTypeSelect = document.getElementById('vehicleTypeSelect');
+        const products = document.querySelectorAll('.product');
+        const currentPath = window.location.pathname; // Obtener la ruta actual
+
+        brandSelect.addEventListener('change', filterProducts);
+        vehicleTypeSelect.addEventListener('change', filterProducts);
+
+        function filterProducts() {
+            const selectedBrand = brandSelect.value.toLowerCase();
+            const selectedVehicleType = vehicleTypeSelect.value.toLowerCase();
+
+        products.forEach(function (product) {
+            const productBrand = product.querySelector('.marca').textContent.toLowerCase();
+            const productVehicleType = product.querySelector('.subcategory').textContent.toLowerCase();
+
+            const brandMatch = selectedBrand === '' || productBrand.includes(selectedBrand);
+            const vehicleTypeMatch = selectedVehicleType === '' || productVehicleType.includes(selectedVehicleType);
+
+            if (brandMatch && vehicleTypeMatch) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+        }
+
+    // Generar dinámicamente las opciones de marca según la ruta actual
+        function generateBrandOptions(route) {
+            const brandsByRoute = {
+                '/products/neumaticos': ['Fate', 'Goodyear', 'Bridgestone', 'Pirelli', 'Continental'],
+                '/products/neumaticos/auto': ['Fate', 'Goodyear', 'Bridgestone', 'Pirelli', 'Continental'],
+                '/products/neumaticos/camioneta': ['Fate', 'Goodyear', 'Bridgestone', 'Pirelli', 'Continental'],
+                '/products/neumaticos/camion': ['Fate', 'Goodyear', 'Bridgestone', 'Pirelli', 'Continental'],
+                '/products/neumaticos/vial': ['Fate', 'Goodyear', 'Bridgestone', 'Pirelli', 'Continental'],
+                '/products/aceites': ['Liqui Moly', 'Total', 'Puma'],
+                '/products/baterias': ['Moura'],
+                // Agrega más rutas y marcas según sea necesario
+        };
+
+            const brands = brandsByRoute[route] || [];
+
+            brandSelect.innerHTML = ''; // Limpiar las opciones anteriores
+            const defaultOption = document.createElement('option');
+            defaultOption.textContent = 'Selecciona una marca';
+            brandSelect.appendChild(defaultOption);
+
+            brands.forEach(function(brand) {
+                const option = document.createElement('option');
+                option.textContent = brand;
+                option.value = brand.toLowerCase();
+                brandSelect.appendChild(option);
+            });
+        }
+
+        generateBrandOptions(currentPath); // Generar las opciones de marca según la ruta actual
+        });
+    </script>
+    <script>
+        const vehicleTypeSelect = document.getElementById('vehicleTypeSelect');
     
-            brandSelect.addEventListener('change', filterProducts);
-            vehicleTypeSelect.addEventListener('change', filterProducts);
-    
-            function filterProducts() {
-                const selectedBrand = brandSelect.value.toLowerCase();
-                const selectedVehicleType = vehicleTypeSelect.value.toLowerCase();
-    
-                products.forEach(function (product) {
-                    const productBrand = product.querySelector('.marca').textContent.toLowerCase();
-                    const productVehicleType = product.querySelector('.category').textContent.toLowerCase();
-    
-                    const brandMatch = selectedBrand === '' || productBrand.includes(selectedBrand);
-                    const vehicleTypeMatch = selectedVehicleType === '' || productVehicleType.includes(selectedVehicleType);
-    
-                    if (brandMatch && vehicleTypeMatch) {
-                        product.style.display = 'block';
-                    } else {
-                        product.style.display = 'none';
-                    }
-                });
+        vehicleTypeSelect.addEventListener('change', function() {
+            const selectedValue = vehicleTypeSelect.value;
+            if (selectedValue) {
+                window.location.href = '/products/neumaticos/' + selectedValue.toLowerCase(); // Redirecciona a la ruta correspondiente
             }
         });
     </script>
-    
-    
 </body>
 </html>

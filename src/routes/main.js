@@ -7,7 +7,7 @@ const routes = {
     about: '/us',
     contact: '/contact',
     services: '/services',
-    search: '/search',
+    //search: '/search',
 };
 
 router.get(routes.home, controller.home);
@@ -18,6 +18,6 @@ router.get(routes.contact, controller.contact);
 
 router.get(routes.services, controller.services);
 
-router.get(routes.search, controller.search);
+//router.get(routes.search, controller.search);
 
 module.exports = router;
