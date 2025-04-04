@@ -7,7 +7,7 @@
     "subcategory": "Auto",
     "range": "T, H",
     "price": "A consultar",
-    "image": "165_70_r13_fate_sentiva.png"
+    "image": "Sentiva-AR360.png"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "subcategory": "Auto",
     "range": "T",
     "price": "A consultar",
-    "image": "175_70_r13_fate_prestiva.png"
+    "image": "Sentiva-AR360.png"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "subcategory": "Auto",
     "range": "H",
     "price": "A consultar",
-    "image": "195_55_r15_fate_sentiva_sport.png"
+    "image": "SentivaSport.png"
   },
   {
     "id": 4,
@@ -46,16 +46,25 @@
     "category": "Neumáticos",
     "subcategory": "Auto",
     "price": "A consultar",
-    "image": "185_65_r15_goodyear_assurance.png"
+    "image": "assurance.png"
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "Goodyear Efficientgrip",
     "marca": "Goodyear",
     "category": "Neumáticos",
     "subcategory": "Auto",
     "price": "A consultar",
-    "image": "225_45_r17_efficientgrip.png"
+    "image": "efficientgrip.png"
+  },
+  {
+    "id": 7,
+    "name": "Goodyear Efficientgrip SUV",
+    "marca": "Goodyear",
+    "category": "Neumáticos",
+    "subcategory": "Auto",
+    "price": "A consultar",
+    "image": "efficientgripsuv.png"
   },
   {
     "id": 8,
@@ -64,7 +73,7 @@
     "category": "Neumáticos",
     "subcategory": "Camioneta",
     "price": "A consultar",
-    "image": "265_65_r17_wrangler.png"
+    "image": "wrangler.png"
   },
   {
     "id": 9,
@@ -73,7 +82,7 @@
     "category": "Neumáticos",
     "subcategory": "Camioneta",
     "price": "A consultar",
-    "image": "245_65_r17_scorpion.png"
+    "image": "scorpion.png"
   },
   {
     "id": 10,
@@ -82,10 +91,10 @@
     "category": "Neumáticos",
     "subcategory": "Camioneta",
     "price": "A consultar",
-    "image": "265_60_r18_dueler.png"
+    "image": "dueler.png"
   },
   {
-    "id": 20,
+    "id": 50,
     "name": "5W30 Liqui Moly Molygen",
     "marca": "Liqui Moly",
     "category": "Aceites",
@@ -94,7 +103,7 @@
     "image": "5w30_liquimoly.png"
   },
   {
-    "id": 21,
+    "id": 51,
     "name": "5W30 Liqui Moly Molygen DPF",
     "marca": "Liqui Moly",
     "category": "Aceites",
@@ -103,7 +112,7 @@
     "image": "5w30_dpf_liquimoly.png"
   },
   {
-    "id": 22,
+    "id": 52,
     "name": "5W40 Liqui Moly Molygen",
     "marca": "Liqui Moly",
     "category": "Aceites",
@@ -112,7 +121,7 @@
     "image": "5w40_liquimoly.png"
   },
   {
-    "id": 23,
+    "id": 53,
     "name": "10W60 Liqui Moly Race Tech",
     "marca": "Liqui Moly",
     "category": "Aceites",
@@ -121,7 +130,7 @@
     "image": "10w60_liquimoly.png"
   },
   {
-    "id": 24,
+    "id": 54,
     "name": "10W40 Liqui Moly Super Leichtlauf",
     "marca": "Liqui Moly",
     "category": "Aceites",
@@ -130,7 +139,7 @@
     "image": "10w40_liquimoly.png"
   },
   {
-    "id": 25,
+    "id": 55,
     "name": "10W40 Liqui Moly MoS Leichtlauf",
     "marca": "Liqui Moly",
     "category": "Aceites",
@@ -139,7 +148,7 @@
     "image": "10w40_liquimoly_semi.png"
   },
   {
-    "id": 26,
+    "id": 56,
     "name": "5W30 Total Ineo",
     "marca": "Total",
     "category": "Aceites",
@@ -148,7 +157,7 @@
     "image": "5w30_total_ineo.png"
   },
   {
-    "id": 27,
+    "id": 57,
     "name": "5W40 Total 9000",
     "marca": "Total",
     "category": "Aceites",
@@ -157,7 +166,7 @@
     "image": "5w40_total_9000.png"
   },
   {
-    "id": 28,
+    "id": 58,
     "name": "10W40 Total 7000",
     "marca": "Total",
     "category": "Aceites",
@@ -166,7 +175,7 @@
     "image": "10w40_total_7000.png"
   },
   {
-    "id": 29,
+    "id": 59,
     "name": "5W30 Puma Advanced",
     "marca": "Puma",
     "category": "Aceites",
@@ -175,7 +184,7 @@
     "image": "5w30_puma.png"
   },
   {
-    "id": 30,
+    "id": 60,
     "name": "10W40 Puma Extra GD",
     "marca": "Puma",
     "category": "Aceites",
@@ -184,93 +193,93 @@
     "image": "10w40_puma.png"
   },
   {
-    "id": 31,
+    "id": 100,
     "name": "Batería Moura M18FD 12X45",
     "marca": "Moura",
     "category": "Baterías",
     "subcategory": "Libre de mantenimiento",
     "price": "A consultar",
-    "image": "bateria_moura.png"
+    "image": "moura.png"
   },
   {
-    "id": 32,
+    "id": 101,
     "name": "Batería Moura M22ED 12X50",
     "marca": "Moura",
     "category": "Baterías",
     "subcategory": "Libre de mantenimiento",
     "price": "A consultar",
-    "image": "bateria_moura.png"
+    "image": "moura.png"
   },
   {
-    "id": 33,
+    "id": 102,
     "name": "Batería Moura M22GD 12X65",
     "marca": "Moura",
     "category": "Baterías",
     "subcategory": "Libre de mantenimiento",
     "price": "A consultar",
-    "image": "bateria_moura.png"
+    "image": "moura.png"
   },
   {
-    "id": 34,
+    "id": 103,
     "name": "Batería Moura M24KD 12X75",
     "marca": "Moura",
     "category": "Baterías",
     "subcategory": "Libre de mantenimiento",
     "price": "A consultar",
-    "image": "bateria_moura.png"
+    "image": "moura.png"
   },
   {
-    "id": 35,
+    "id": 104,
     "name": "Batería Moura M18SD 12X40",
     "marca": "Moura",
     "category": "Baterías",
     "subcategory": "Libre de mantenimiento",
     "price": "A consultar",
-    "image": "bateria_moura.png"
+    "image": "moura.png"
   },
   {
-    "id": 36,
+    "id": 105,
     "name": "Batería Moura M28TD 12X90",
     "marca": "Moura",
     "category": "Baterías",
     "subcategory": "Libre de mantenimiento",
     "price": "A consultar",
-    "image": "bateria_moura.png"
+    "image": "moura.png"
   },
   {
-    "id": 37,
+    "id": 106,
     "name": "Batería Moura M28TE 12X90",
     "marca": "Moura",
     "category": "Baterías",
     "subcategory": "Libre de mantenimiento",
     "price": "A consultar",
-    "image": "bateria_moura.png"
+    "image": "moura.png"
   },
   {
-    "id": 38,
+    "id": 107,
     "name": "Batería Moura M30A 12X110",
     "marca": "Moura",
     "category": "Baterías",
     "subcategory": "Libre de mantenimiento",
     "price": "A consultar",
-    "image": "bateria_moura.png"
+    "image": "moura.png"
   },
   {
-    "id": 39,
+    "id": 108,
     "name": "Batería Moura M30QD 12X90",
     "marca": "Moura",
     "category": "Baterías",
     "subcategory": "Libre de mantenimiento",
     "price": "A consultar",
-    "image": "bateria_moura.png"
+    "image": "moura.png"
   },
   {
-    "id": 40,
+    "id": 109,
     "name": "Batería Moura M46BD 12X180",
     "marca": "Moura",
     "category": "Baterías",
     "subcategory": "Libre de mantenimiento",
     "price": "A consultar",
-    "image": "bateria_moura.png"
+    "image": "moura.png"
   }
 ]
