@@ -175,24 +175,6 @@
     "image": "10w40_total_7000.png"
   },
   {
-    "id": 59,
-    "name": "5W30 Puma Advanced",
-    "marca": "Puma",
-    "category": "Aceites",
-    "subcategory": "Sintético",
-    "price": "A consultar",
-    "image": "5w30_puma.png"
-  },
-  {
-    "id": 60,
-    "name": "10W40 Puma Extra GD",
-    "marca": "Puma",
-    "category": "Aceites",
-    "subcategory": "Semisintético",
-    "price": "A consultar",
-    "image": "10w40_puma.png"
-  },
-  {
     "id": 100,
     "name": "Batería Moura M18FD 12X45",
     "marca": "Moura",
