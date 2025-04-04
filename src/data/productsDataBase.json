@@ -5,7 +5,8 @@
     "marca": "Fate",
     "category": "Neumáticos",
     "subcategory": "Auto",
-    "range": "T, H",
+    "range": "T (190 km/h), H (210 km/h)",
+    "uso": "Pavimento",
     "price": "A consultar",
     "image": "Sentiva-AR360.png"
   },
@@ -15,7 +16,8 @@
     "marca": "Fate",
     "category": "Neumáticos",
     "subcategory": "Auto",
-    "range": "T",
+    "range": "T (190km/h)",
+    "uso": "Pavimento",
     "price": "A consultar",
     "image": "Sentiva-AR360.png"
   },
@@ -25,7 +27,8 @@
     "marca": "Fate",
     "category": "Neumáticos",
     "subcategory": "Auto",
-    "range": "H",
+    "range": "H (210km/h)",
+    "uso": "Pavimento",
     "price": "A consultar",
     "image": "SentivaSport.png"
   },
@@ -35,7 +38,8 @@
     "marca": "Fate",
     "category": "Neumáticos",
     "subcategory": "Auto",
-    "range": "W, Y",
+    "range": "W (270km/h), Y (300km/h)",
+    "uso": "Pavimento",
     "price": "A consultar",
     "image": "pininfarinaSport.png"
   },
@@ -45,6 +49,8 @@
     "marca": "Goodyear",
     "category": "Neumáticos",
     "subcategory": "Auto",
+    "range": "T (190 km/h), H (210 km/h)",
+    "uso": "Pavimento",
     "price": "A consultar",
     "image": "assurance.png"
   },
@@ -54,6 +60,8 @@
     "marca": "Goodyear",
     "category": "Neumáticos",
     "subcategory": "Auto",
+    "range": "W (270km/h), Y (300km/h)",
+    "uso": "Pavimento",
     "price": "A consultar",
     "image": "efficientgrip.png"
   },
@@ -63,6 +71,8 @@
     "marca": "Goodyear",
     "category": "Neumáticos",
     "subcategory": "Auto",
+    "range": "W (270km/h), Y (300km/h)",
+    "uso": "Pavimento",
     "price": "A consultar",
     "image": "efficientgripsuv.png"
   },
