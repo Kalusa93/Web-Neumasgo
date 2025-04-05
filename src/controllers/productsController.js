@@ -7,48 +7,68 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 const productsController = {
 
     products: (req, res) => {
-        res.render('products/products', {title: 'Productos', css: 'products.css', products});
-    },
+        const { type, rodado } = req.query;
+    
+        let filteredProducts = products;
+    
+        if (type) {
+            filteredProducts = filteredProducts.filter(
+                product => product.category === 'Neumáticos' && product.subcategory === type
+            );
+        }
+    
+        if (rodado) {
+            filteredProducts = filteredProducts.filter(
+                product => product.rodado === rodado
+            );
+        }
+    
+        res.render('products/products', {
+            title: 'Productos',
+            css: 'products.css',
+            products: filteredProducts
+        });
+    },    
 
     neumaticos: (req, res) => {
         let neumaticos = products.filter( product => product.category == 'Neumáticos')
 
-        res.render('products/products', {title: 'Neumáticos', css: 'products.css', products: neumaticos});
+        res.render('products/products', {title: 'Neumáticos', css: 'products.css', products: neumaticos, mostrarFiltros: true});
     },
 
     aceites: (req, res) => {
         let aceites = products.filter( product => product.category == 'Aceites')
 
-        res.render('products/products', {title: 'Aceites', css: 'products.css', products: aceites});
+        res.render('products/products', {title: 'Aceites', css: 'products.css', products: aceites, mostrarFiltros: false});
     },
 
     baterias: (req, res) => {
         let baterias = products.filter( product => product.category == 'Baterías')
 
-        res.render('products/products', {title: 'Baterías', css: 'products.css', products: baterias});
+        res.render('products/products', {title: 'Baterías', css: 'products.css', products: baterias, mostrarFiltros: false});
     },
 
     neumaticosAuto: (req, res) => {
         let neumaticosAuto = products.filter( product => product.category == 'Neumáticos' && product.subcategory == 'Auto')
 
-        res.render('products/products', {title: 'Neumáticos Auto', css: 'products.css', products: neumaticosAuto});
+        res.render('products/products', {title: 'Neumáticos Auto', css: 'products.css', products: neumaticosAuto, mostrarFiltros: true});
     },
     neumaticosCamioneta: (req, res) => {
         let neumaticosCamioneta = products.filter( product => product.category == 'Neumáticos' && product.subcategory == 'Camioneta')
 
-        res.render('products/products', {title: 'Neumáticos Camioneta', css: 'products.css', products: neumaticosCamioneta});
+        res.render('products/products', {title: 'Neumáticos Camioneta', css: 'products.css', products: neumaticosCamioneta, mostrarFiltros: true});
     },
 
     neumaticosCamion: (req, res) => {
         let neumaticosCamion = products.filter( product => product.category == 'Neumáticos' && product.subcategory == 'Camión')
 
-        res.render('products/products', {title: 'Neumáticos Camión', css: 'products.css', products: neumaticosCamion});
+        res.render('products/products', {title: 'Neumáticos Camión', css: 'products.css', products: neumaticosCamion, mostrarFiltros: true});
     },
     
     neumaticosVial: (req, res) => {
         let neumaticosVial = products.filter( product => product.category == 'Neumáticos' && product.subcategory == 'Vial')
 
-        res.render('products/products', {title: 'Neumáticos Vial', css: 'products.css', products: neumaticosVial});
+        res.render('products/products', {title: 'Neumáticos Vial', css: 'products.css', products: neumaticosVial, mostrarFiltros: true});
     },
 
     detail: (req, res) => {
